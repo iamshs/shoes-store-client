@@ -1,17 +1,17 @@
 :root{
-  --body-background :  #F9FAFB ;
-  --primary-color : black ;
+  --body-background :  #f7fafd ;
+  --primary-color : #0D1117;
   --secondary-color : #a50bd4 ;
   --btn-background : #0c0c0c ;
-  --btn-color : rgb(239, 241, 246) ;
+  --card-color : rgb(255, 255, 255) ;
 }
 
 [data-theme = "dark"]{
-  --body-background : #0D1117 ;
+  --body-background : #0e131a ;
   --primary-color : #e9ecf1 ;
   --secondary-color : #df120b ;
   --btn-background: #f3f4f6 ;
-  --btn-color : black ;
+  --card-color : black ;
 }
 
 

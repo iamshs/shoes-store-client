@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100&family=Heebo&family=Lobster&family=PT+Serif:wght@700&family=Poppins:wght@400;500;600;700&family=Roboto+Slab:wght@100&display=swap');
 
 .navigation {
   height: 40px;
@@ -19,7 +19,7 @@
   font-size: 1rem;
   margin-left: 1rem;
   font-weight: 500;
-  font-family: "Merienda", sans-serif;
+  font-family: 'Phudu', cursive;
   display: flex;
   align-items: center;
   gap: 1.5px;
@@ -97,7 +97,7 @@
     /* // stacks the li tags vertically  */
     flex-direction: column;
     /* // makes menu span full height and width */
-    width: 30%;
+    width: 40%;
     height: calc(50vh - 77px);
     background-color: var(--body-background);
     border-top: 1px solid black;
