@@ -1,3 +1,23 @@
+:root{
+  --body-background :  #F9FAFB ;
+  --primary-color : black ;
+  --secondary-color : #006cca ;
+  --btn-background : #0c0c0c ;
+  --btn-color : rgb(239, 241, 246) ;
+}
+
+[data-theme = "dark"]{
+  --body-background : #0F0F0F ;
+  --primary-color : #f3f4f6 ;
+  --secondary-color : #daa04a ;
+  --btn-background: #f3f4f6 ;
+  --btn-color : black ;
+}
+
+
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

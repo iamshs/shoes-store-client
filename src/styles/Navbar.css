@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+.navigation {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.5rem 0rem;
+    background-color: var(--body-background);
+    
+   
+  }
+  
+  /* Let’s style brand-name and navigation-menu: */
+  
+  /* // navbar.css */
+  .brand-name {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    font-weight: 600;
+    font-family: 'Merienda', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 1.5px;
+    /* text-shadow: 1px 0px 1px black; */
+     
+  }
+.brand-name>img{
+  width: 60px;
+}
+
+  .navigation-menu {
+    margin-left: auto;
+  } 
+  
+  /* // navbar.css */
+  .navigation-menu ul {
+    display: flex;
+    padding: 0;
+  }
+  .navigation-menu li {
+    
+    list-style-type: none;
+    margin: 0 1rem;
+  }
+  .inactive{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color: var(--primary-color);
+    font-size: 18px;
+  }
+
+  .active {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 18px;
+    
+    
+  }
+
+ .nav-btn{
+  background-color: var(--btn-background);
+  color: var(--btn-color);
+  text-decoration: none;
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  
+  
+ }
+  .hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #120f0f;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  /* // positions the icon to the right and center aligns it vertically */
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+  }
+  /* .hamburger:hover {
+    background-color: #292a2d;
+  } */
+
+
+
+  @media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+      }
+
+      .navigation-menu ul {
+        display: none;
+      }
+      .navigation-menu ul {
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        /* // stacks the li tags vertically  */
+        flex-direction: column;
+       /* // makes menu span full height and width */
+        width: 40%;
+        height: calc(60vh - 77px);
+        background-color: white;
+        border-top: 1px solid black;
+      }
+      .navigation-menu li {
+        /* // centers link text and strips off margin */
+        text-align: center;
+        margin: 0;
+      }
+      .inactive {
+        width: 100%;
+        padding: 1rem 0;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+      }
+      .active{
+        width: 100%;
+        padding: 1rem 0;
+        text-decoration: none;
+        color: rgb(254, 55, 55);
+        font-weight: 700;
+      }
+      .navigation-menu.expanded ul {
+        display: block;
+      }
+  }
