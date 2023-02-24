@@ -1,21 +1,27 @@
-import React,{ useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import Toggle from '../../Components/Toggle';
-import '../../styles/Navbar.css'
-import logo from "../../assets/logo.png"  
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import "../../styles/Navbar.css";
+import logo from "../../assets/logo.png";
+import ToggleTheme from "../../Components/ToggleTheme";
+
+
+
 
 const Navbar = () => {
-    const [isNavExpanded, setIsNavExpanded] = useState(false)
-    return (
-        <nav className="navigation">
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+ 
+ 
+
+  return (
+    <nav  className="navigation">
       <Link to="/" className="brand-name">
-        <img src={logo}  alt="" />
-       <h2> Shoes-store</h2>
+        <img src={logo} alt="" />
+        <h2> Shoes-store</h2>
       </Link>
       <button
         className="hamburger"
         onClick={() => {
-          setIsNavExpanded(!isNavExpanded)
+          setIsNavExpanded(!isNavExpanded);
         }}
       >
         <svg
@@ -38,19 +44,33 @@ const Navbar = () => {
       >
         <ul>
           <li>
-            <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Home</NavLink>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "active" : "inactive")}
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/everything" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Everything</NavLink>
+            <NavLink
+              to="/everything"
+              className={({ isActive }) => (isActive ? "active" : "inactive")}
+            >
+              Everything
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/login" className="nav-btn">Login</NavLink>
+            <NavLink to="/login" className={({ isActive }) => (isActive ? "active" : "inactive")}>
+              Login
+            </NavLink>
           </li>
-          <li> <Toggle /> </li>
+          <li className="toggle">
+            <ToggleTheme />
+          </li>
         </ul>
       </div>
     </nav>
-    );
+  );
 };
 
 export default Navbar;

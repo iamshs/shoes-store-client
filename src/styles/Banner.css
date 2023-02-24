@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100&family=Heebo&family=Lobster&family=PT+Serif:wght@700&family=Poppins:wght@400;500;600;700&family=Roboto+Slab:wght@100&display=swap');
+.banner-home{
+    background-image: url("../assets/bg-home.jpg");
+    font-family: 'Lobster', cursive;
+    color: var(--secondary-color);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-attachment: fixed;
+  
+    
+}
+
+.banner-home h1{
+    font-size: 7rem;
+    margin-bottom: 4px;
+    letter-spacing: 5px;
+  text-shadow: 2px 2px 2px rgb(255, 255, 255), 
+    0px -4px 10px rgba(255,255,255,0.3);
+    
+}
+
+.banner-home h2{
+    margin-top: 0px;
+    font-size: 6rem;
+    text-shadow: 2px 1px 2px rgb(246, 169, 169), 
+    0px -2px 5px rgb(255, 255, 255);
+}
+
+@media screen and (max-width:767px) {
+    .banner-home{
+        height: 40vh;
+      
+       
+    }
+    .banner-home h1{
+        font-size: 2rem;
+        letter-spacing: normal;
+    }
+    .banner-home h2{
+        font-size: 2rem;
+    }
+}
+
+
+
+

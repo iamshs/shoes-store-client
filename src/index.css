@@ -1,21 +1,18 @@
 :root{
   --body-background :  #F9FAFB ;
   --primary-color : black ;
-  --secondary-color : #006cca ;
+  --secondary-color : #a50bd4 ;
   --btn-background : #0c0c0c ;
   --btn-color : rgb(239, 241, 246) ;
 }
 
 [data-theme = "dark"]{
-  --body-background : #0F0F0F ;
-  --primary-color : #f3f4f6 ;
-  --secondary-color : #daa04a ;
+  --body-background : #0D1117 ;
+  --primary-color : #e9ecf1 ;
+  --secondary-color : #df120b ;
   --btn-background: #f3f4f6 ;
   --btn-color : black ;
 }
-
-
-
 
 
 body {
@@ -25,6 +22,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--body-background);
 }
 
 code {
