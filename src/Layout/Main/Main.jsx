@@ -1,12 +1,13 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Navbar from './Navbar';
+import Nav from './Nav';
+
 
 
 const Main = () => {
     return (
         <div style={{maxWidth : "150rem" }} >
-           <Navbar />
+           <Nav />
            <Outlet /> 
         </div>
     );

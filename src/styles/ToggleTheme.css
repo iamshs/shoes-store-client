@@ -19,7 +19,6 @@ label {
     right: 0;
     bottom: 0;
     background: #212529;
-    transition: 0.3s;
     border-radius: 30px;
     transition: all 0.3s ease-in-out;
   }
