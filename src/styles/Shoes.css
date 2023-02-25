@@ -1,12 +1,13 @@
 .shoes-container{
-    padding: 0px 4px;
+    padding: 1.5rem 4px;
 }
 
-.shoes-container>:nth-child(2){
+.card-container{
     display: grid;
-    grid-template-columns: repeat(5 , 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 1.5rem;
     padding: 0.8rem;
+    place-items: center;
 }
 
 .feature-header{
@@ -22,11 +23,19 @@
 .feature-header>h3{
     color: var(--primary-color);
     font-size: 2.5rem;
+    padding: 1.5rem 0;
 }
 
 
 
 @media screen and (max-width:767px ) {
+     
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);  
+        place-items: center;
+        gap: 3rem;
+    }
 
     .feature-header>img{
         width: 30px;
@@ -35,4 +44,23 @@
         color: var(--primary-color);
         font-size: 1rem;
     } 
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        place-items: center;
+        gap: 2rem;
+    }
+   
+    .feature-header>img{
+        width: 50px;
+    }
+    .feature-header>h3{
+        color: var(--primary-color);
+        font-size: 2rem;
+    } 
+   
 }

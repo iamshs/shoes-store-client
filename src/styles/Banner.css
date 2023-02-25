@@ -47,6 +47,18 @@
     }
 }
 
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .banner-home{
+        height: 60vh;
+    }
+    .banner-home h1{
+        font-size: 2.5rem;
+    }
+    .banner-home h2{
+        font-size: 2rem;
+    }
+}
+
 
 
 

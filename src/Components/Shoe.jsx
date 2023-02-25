@@ -3,6 +3,8 @@ import React from "react";
 import "../styles/Shoe.css";
 import {FaShoppingCart} from "react-icons/fa"
 
+
+
 const Shoe = ({ product }) => {
   const { name, price, rating, image } = product;
 
@@ -11,6 +13,7 @@ const Shoe = ({ product }) => {
       <img src={image} alt="" />
       <div className="card-details">
         <h2> {name} </h2>
+      
        <h1>${price} </h1>
       </div>
       <button>
