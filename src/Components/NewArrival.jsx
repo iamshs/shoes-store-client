@@ -24,7 +24,7 @@ const Slider = () => {
   return (
     <div className="s-container">
         <div className="arrival-header">
-            <BsArrowRight size={60} />
+            <BsArrowRight className="arrow" />
             <h1>New Arrival</h1>
         </div>
       <Swiper
