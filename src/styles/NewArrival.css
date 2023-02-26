@@ -1,0 +1,54 @@
+.s-container {
+    position: relative;
+    margin: 10rem 0;
+  }
+
+  .arrival-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 30px;
+    margin-left: 16px;
+    gap: 4px;
+    margin: 3rem 0;
+    color: var(--primary-color);
+  }
+
+  .arrival-header h1{
+    font-weight: 600;
+  }
+  
+  .s-container .swiper {
+    width: 90%;
+    position: unset;
+    height: 50rem;
+  }
+  
+  .s-container .swiper-slide{
+      background: var(--primary-color);
+      box-sizing: border-box;
+      display: flex;
+      border-radius: 10px;
+      padding: 0.5rem;
+      overflow: hidden;
+      position: relative;
+  }
+  
+  .s-container .swiper-button-prev{
+      left: 2rem;
+      top: 60%;
+  }
+  .s-container .swiper-button-next{
+      right: 2rem;
+      top: 60%;
+  }
+
+  .s-container .swiper-button-next , .s-container .swiper-button-prev{
+    color: var(--secondary-color);
+}
+
+.image-p{
+    width: 100%;
+}
+  
+  

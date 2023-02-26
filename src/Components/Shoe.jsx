@@ -8,7 +8,7 @@ import {motion} from "framer-motion"
 
 
 const Shoe = ({ product }) => {
-  const { name, price, rating, image } = product;
+  const { name, price, image } = product;
 
   return (
     <motion.div variants={item} className="card">
