@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from '../../Components/Banner';
+import Footer from '../../Components/Footer';
 import JoinClub from '../../Components/JoinClub';
 import NewArrival from '../../Components/NewArrival';
 import Shoes from '../../Components/Shoes';
@@ -13,6 +14,7 @@ const Home = () => {
         <Shoes />
         <NewArrival />
         <JoinClub />
+        <Footer />
         </div>
     );
 };

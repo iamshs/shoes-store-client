@@ -1,0 +1,20 @@
+.f-container{
+    background: var(--primary-color);
+    color: var(--body-background);
+    letter-spacing: 0.3px;
+    padding: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10rem;
+    
+}
+
+.l-side .lSide-text>p{
+    margin: 1px;
+}
+
+.m-side .mSide-text>p{
+    margin: 1px;
+}
