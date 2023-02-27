@@ -1,0 +1,119 @@
+.jc-container{
+    background-color: #EDE734;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 300px;
+    margin: 20px 0;
+}
+
+.jc-container>h1{
+    font-size: 3rem;
+    max-width: 35%;
+ 
+   
+}
+
+.jc-container .jc-btn{
+    background-color: #000000;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-sizing: border-box;
+    padding: 0 18px;
+   
+   
+}
+
+.jc-container .jc-btn:hover{
+    background-color: #000000d7;
+    cursor: pointer;
+}
+
+.jc-container .jc-btn>p{
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.jc-container .jc-btn .jc-icon{
+    font-size: 40px;
+    font-weight: 500;
+    
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .jc-container{
+        height: 220px;
+    }
+    .jc-container>h1{
+        font-size: 2rem;
+        max-width: 45%;
+      
+       
+    } 
+
+    .jc-container .jc-btn{
+        background-color: #000000;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        box-sizing: border-box;
+        padding: 0 10px;
+       
+       
+    }
+
+    .jc-container .jc-btn>p{
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .jc-container{
+        background-color: #EDE734;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 150px;
+        margin: 20px 0;
+    }
+    .jc-container>h1{
+        font-size: 1rem;
+        max-width: 40%;
+       
+       
+    } 
+
+    .jc-container .jc-btn>p{
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+    }
+
+    .jc-container .jc-btn{
+        background-color: #000000;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        box-sizing: border-box;
+        padding: 0 8px;
+       
+       
+    }
+
+    .jc-container .jc-btn .jc-icon{
+        font-size: 20px;
+        font-weight: 600;
+        
+    }
+}
