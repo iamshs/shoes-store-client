@@ -2,7 +2,7 @@
     background: var(--primary-color);
     color: var(--body-background);
     letter-spacing: 0.3px;
-    padding: 30px 4rem;
+    padding: 4rem 4rem;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;

@@ -10,6 +10,7 @@ import logo from "../assets/logo.png"
 const Footer = () => {
     const today = new Date() ;
     const year = today.getFullYear()
+    
     return (
         <footer className='f-container'>
             {/* logo-----part */}
@@ -19,7 +20,7 @@ const Footer = () => {
             <h2>ShoesStore</h2>
            </div>
            <div className='f-copyright'>
-           Copyright <p dangerouslySetInnerHTML={{ __html: "&copy;" }} /> {year} All rights reserved
+           <small>Copyright © {year} All Rights Reserved</small>
            </div>
          </div>
 
