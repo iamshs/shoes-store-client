@@ -1,9 +1,30 @@
 import React from 'react';
 import "../styles/Footer.css"
+import {AiFillFacebook} from "react-icons/ai"
+import {AiOutlineInstagram} from "react-icons/ai"
+import {AiFillTwitterSquare} from "react-icons/ai"
+import {AiFillLinkedin} from "react-icons/ai"
+import { ExternalLink } from 'react-external-link';
+import logo from "../assets/logo.png"
 
 const Footer = () => {
+    const today = new Date() ;
+    const year = today.getFullYear()
     return (
         <footer className='f-container'>
+            {/* logo-----part */}
+         <div>
+           <div className='logo-part'>
+           <img style={{width:"60px"}} src={logo} alt="" />
+            <h2>ShoesStore</h2>
+           </div>
+           <div className='f-copyright'>
+           Copyright <p dangerouslySetInnerHTML={{ __html: "&copy;" }} /> {year} All rights reserved
+           </div>
+         </div>
+
+
+            {/* first---part */}
            <div className='l-side'>
            <h3>SUPPORT</h3>
            <div className='lSide-text'>
@@ -26,7 +47,28 @@ const Footer = () => {
 
             {/* 3rdPart */}
             <div className='r-side'>
-
+             <h3>Visit us</h3>
+              <div className='rSide-link'>
+              <ExternalLink href="https://example.com">
+                <AiFillFacebook className='f-icon' />
+              </ExternalLink>
+             
+             
+              <ExternalLink href="https://example.com">
+                <AiOutlineInstagram className='f-icon' />
+              </ExternalLink>
+             
+             
+              <ExternalLink href="https://example.com">
+                <AiFillTwitterSquare className='f-icon' />
+              </ExternalLink>
+             
+             
+              <ExternalLink href="https://example.com">
+                <AiFillLinkedin className='f-icon' />
+              </ExternalLink>
+              </div>
+             
             </div>
         </footer>
     );
